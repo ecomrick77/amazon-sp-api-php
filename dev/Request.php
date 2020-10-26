@@ -82,7 +82,7 @@ class Request
         $canonicalHeaders[] = 'host:' . $host;
         $canonicalHeaders[] = 'user-agent:' . 'SomeApi/1.5';
         $canonicalHeaders[] = 'x-amz-access-token:' . $accessToken;
-        //$canonicalHeaders[] = 'x-amz-date:' . $reqDateTime;
+        $canonicalHeaders[] = 'x-amz-date:' . $reqDateTime;
         $canonicalHeadersStr = implode("\n", $canonicalHeaders);
 
         // Create request payload
